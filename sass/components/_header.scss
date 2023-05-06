@@ -1,5 +1,7 @@
+@media screen and (min-width: 480px) {
+  
 .header {
-    width: 1200px;
+    max-width: 1200px;
     border-bottom: 1px solid #fff;
     margin: 0 auto;
 
@@ -72,4 +74,15 @@
     position: absolute;
     display: block;
   }
+}
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  
 }
