@@ -1,16 +1,16 @@
 .text {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
    
 &__position {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style-type: none;
     gap: 30px;
   }
   
 &__icons-background {
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: var(--verywhite);
     display: flex;
@@ -33,6 +33,7 @@
     font-size: 16px;
     text-transform: uppercase;
     padding-bottom: 10px;
+    text-align: center;
   }
   
 &__appearance {
@@ -42,8 +43,32 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    width: 450px;
+    height: 50px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .text {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+  &__position {
+    flex-direction: row;
+  }
+  &__icons-background {
+    width: 270px;
+  }
+  &__appearance {
     width: 270px;
     height: 75px;
-    padding-top: 10px;
+  }
+}
+}
+
+@media screen and (min-width: $tablet) {
+  &__title-appearance {
+    text-align: none;
   }
 }
