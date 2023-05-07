@@ -1,25 +1,25 @@
-.banner {
+ .banner {
     background-color: var(--verygrey);
-    height: 600px;
-    width: 100%;
     background-image: url("../images/picture.jpg");
     background-size: cover;
-    background-position: 50%, 50%;
-    max-width: 1600px;
-  
+    background-position: center, center;
+    background-repeat: no-repeat;
+    max-width: 480px;
+    height: 400px;
+    // width: 100%;
+    // padding: 0;
+
 &__writing {
     font-family:"Roboto";
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
     color: var(--white);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 40px;
-    margin: 0;
-  
-  
+    font-size: 26px;
+    line-height: 42px;
+    padding-top: 118px;
+    padding-bottom: 30px;
+    margin: 0; 
   }
 &__button-appearance {
      background-color: var(--blue);
@@ -27,8 +27,7 @@
      width: 200px;
      border-radius: 4px;
      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
-     cursor: pointer;
-  
+     cursor: pointer; 
   }
   
 &__button-text {
@@ -47,5 +46,27 @@
 &__button-position {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .banner {
+    height: 600px;
+    max-width: 1600px;
+  
+  &__writing {
+    font-size: 44px;
+    line-height: 60px;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+}
+}
+
+@media screen and (min-width: $tablet) {
+  .banner {
+    height: 768px;
+    max-width: 1024px;
   }
 }
